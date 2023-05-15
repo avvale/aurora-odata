@@ -2,8 +2,9 @@ import { LoggerService } from '@nestjs/common';
 import { WinstonModule } from 'nest-winston';
 import * as chalk from 'chalk';
 import * as winston from 'winston';
+import { ConfigService } from '@nestjs/config';
 
-export const logger = (): LoggerService =>
+export const logger = (configService: ConfigService): LoggerService =>
 {
     return WinstonModule.createLogger({
         level : 'info',
@@ -13,7 +14,7 @@ export const logger = (): LoggerService =>
         ),
         transports: [
             new winston.transports.File({
-                filename: 'logs/error.log',
+                filename: configService.get<string>('LOGGER_BASE_PATH') + '/error.log',
                 level   : 'error',
                 maxsize : 5242880,
                 maxFiles: 5,
@@ -30,7 +31,7 @@ export const logger = (): LoggerService =>
                 ),
             }),
             new winston.transports.File({
-                filename: 'logs/console.log',
+                filename: configService.get<string>('LOGGER_BASE_PATH') + '/console.log',
                 maxsize : 5242880,
                 maxFiles: 5,
                 format  : winston.format.combine(
