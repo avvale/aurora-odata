@@ -2,6 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { setTimeZoneApplication } from '@aurorajs.dev/core';
+import { logger } from '@aurora/services/logger.service';
 import { AppModule } from './app.module';
 import { urlencoded, json } from 'express';
 import * as utc from 'dayjs/plugin/utc';
@@ -22,7 +23,7 @@ dayjs.extend(dayOfYear);
 
 async function bootstrap(): Promise<void>
 {
-    const app = await NestFactory.create(AppModule);
+    const app = await NestFactory.create(AppModule, { logger: logger() });
     const configService = app.get(ConfigService);
 
     if (configService.get<string>('SWAGGER') === 'true')

@@ -1,6 +1,9 @@
 .env
 *.key
 
+# enviroments
+.env.production.plesk
+
 # compiled output
 /dist
 /node_modules
