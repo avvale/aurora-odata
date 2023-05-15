@@ -1,0 +1,693 @@
+{
+    "version": "0.0.1",
+    "files": [
+        {
+            "path": "src/@app/library/library.seed.ts",
+            "integrity": "sha1:2d4cdae501708b240d24ae90cdf9fe1eab2b0165"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-author.command-handler.spec.ts",
+            "integrity": "sha1:dea391fcd04b9185a334e35a0f7891c7c2a4071a"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-author.command-handler.ts",
+            "integrity": "sha1:0b8e3408c08c718cb724b07f04be1c571794ccb1"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-author.command.ts",
+            "integrity": "sha1:6ff53e76d8f9edcff01dc65e5ca948b1ea3440af"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-author.service.spec.ts",
+            "integrity": "sha1:5dafce24100b5039cb7c61b922a691600de1be4f"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-author.service.ts",
+            "integrity": "sha1:fc0295d4f67d457a3c77666d435c89ad65691422"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-authors.command-handler.spec.ts",
+            "integrity": "sha1:6f229a17d86cccf1031811d9b720e0227a38bf6e"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-authors.command-handler.ts",
+            "integrity": "sha1:691ef7bac8b0491a2fcf4592a7c16b8c2b6f4b19"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-authors.command.ts",
+            "integrity": "sha1:9c15fe4a8483519f482f32e0465c1a6a50f6881c"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-authors.service.spec.ts",
+            "integrity": "sha1:cbe5113ff8e6177a7e69a2173a8652b2ba63c2c9"
+        },
+        {
+            "path": "src/@app/library/author/application/create/create-authors.service.ts",
+            "integrity": "sha1:c5412660f1a523fe953e850e4be7a9edcce3c3d8"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-author-by-id.command-handler.spec.ts",
+            "integrity": "sha1:b1148675db20388a463edf0d460cce926e3f1bf8"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-author-by-id.command-handler.ts",
+            "integrity": "sha1:c76d3a97d1c868026f2fa62ded70ed2448649a08"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-author-by-id.command.ts",
+            "integrity": "sha1:fa633023fc258df93be079d2106360624b567a3f"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-author-by-id.service.spec.ts",
+            "integrity": "sha1:55d0b22721152ad5273228b1fd7fc3188385b18b"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-author-by-id.service.ts",
+            "integrity": "sha1:79dfe7434790baaa4265b936f0dce320d1eca7c4"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-authors.command-handler.spec.ts",
+            "integrity": "sha1:4273067aed31b6f898d4215603481ca8ac00e6e3"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-authors.command-handler.ts",
+            "integrity": "sha1:2c088d05f237256f5fa0674f03451e08933d6278"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-authors.command.ts",
+            "integrity": "sha1:83a5467e363018ed2c04f735e4e65735d304a621"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-authors.service.spec.ts",
+            "integrity": "sha1:1313fc2c7c3604d9d6c8b427dc4cf5e7f713b54b"
+        },
+        {
+            "path": "src/@app/library/author/application/delete/delete-authors.service.ts",
+            "integrity": "sha1:9742b6c4241d9a864c5a98e966bd67b51b4affa6"
+        },
+        {
+            "path": "src/@app/library/author/application/events/add-authors-context.event.ts",
+            "integrity": "sha1:5b1b277a325de028fa4dc27e5b9d5650771df112"
+        },
+        {
+            "path": "src/@app/library/author/application/events/created-author.event-handler.ts",
+            "integrity": "sha1:5fd683eedeb57c279b16644ac334ed18fd2dc25d"
+        },
+        {
+            "path": "src/@app/library/author/application/events/created-author.event.ts",
+            "integrity": "sha1:42fc0d86c270724b70d1507f0a492603d15402ae"
+        },
+        {
+            "path": "src/@app/library/author/application/events/created-authors.event-handler.ts",
+            "integrity": "sha1:9d4e9dab5df83941e98f880d8644693fa2ecaeef"
+        },
+        {
+            "path": "src/@app/library/author/application/events/created-authors.event.ts",
+            "integrity": "sha1:663b567cfb864d1155e809518a859aa270add73e"
+        },
+        {
+            "path": "src/@app/library/author/application/events/deleted-author.event-handler.ts",
+            "integrity": "sha1:33d59bbaeb5d271d59bf730d073a09ef2371ab53"
+        },
+        {
+            "path": "src/@app/library/author/application/events/deleted-author.event.ts",
+            "integrity": "sha1:b024fb3bae2aaea3e0a2928c907ad288d8b07278"
+        },
+        {
+            "path": "src/@app/library/author/application/events/deleted-authors.event-handler.ts",
+            "integrity": "sha1:f7ea86e17ad41e19c7639f2741939c7ef3a81283"
+        },
+        {
+            "path": "src/@app/library/author/application/events/deleted-authors.event.ts",
+            "integrity": "sha1:7703af115604b2ff17ac65921b2e6be09fa16420"
+        },
+        {
+            "path": "src/@app/library/author/application/events/updated-author.event-handler.ts",
+            "integrity": "sha1:04ef0fdce7687c7a45a2bdd5fe29a72fadac6c71"
+        },
+        {
+            "path": "src/@app/library/author/application/events/updated-author.event.ts",
+            "integrity": "sha1:42a4e20d4e466d921956d8ff0c19321257fba6cf"
+        },
+        {
+            "path": "src/@app/library/author/application/events/updated-authors.event-handler.ts",
+            "integrity": "sha1:acaf32af8ed90cc26192388f95063e91e9f286a7"
+        },
+        {
+            "path": "src/@app/library/author/application/events/updated-authors.event.ts",
+            "integrity": "sha1:04d6d79c642753e9acfa427cebe2cbc7ca946df0"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author-by-id.query-handler.spec.ts",
+            "integrity": "sha1:827efd4e071933930081f834119494a213a0b1d9"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author-by-id.query-handler.ts",
+            "integrity": "sha1:c68ebd616bff8f3bb9f8ed8fb4abcdaed01e0af3"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author-by-id.query.ts",
+            "integrity": "sha1:f77ec91cada7c0116faf306547647d6f3fd99624"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author-by-id.service.spec.ts",
+            "integrity": "sha1:6935c28d69b9efe8e02b568c1ffec25c31dea090"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author-by-id.service.ts",
+            "integrity": "sha1:093ce90f924cf507239185ebf80dae5186d13ec9"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author.query-handler.spec.ts",
+            "integrity": "sha1:a2fd19f5c4bb23fbc53c45aea5a56fef937d4cfd"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author.query-handler.ts",
+            "integrity": "sha1:dabe308165820d41371da5094546da06c20d47b0"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author.query.ts",
+            "integrity": "sha1:a58517ca6b4bc26e971e0fb9f5cb52e4f700d319"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author.service.spec.ts",
+            "integrity": "sha1:1e52be626504f800d8911a6f1453d93b72bc48b7"
+        },
+        {
+            "path": "src/@app/library/author/application/find/find-author.service.ts",
+            "integrity": "sha1:426afc5ce6073ce82f4538790ebce705923b2f18"
+        },
+        {
+            "path": "src/@app/library/author/application/get/get-authors.query-handler.spec.ts",
+            "integrity": "sha1:d2161121160bc06ec5eb3eb26d6478055849c175"
+        },
+        {
+            "path": "src/@app/library/author/application/get/get-authors.query-handler.ts",
+            "integrity": "sha1:61cd86c2c12eafd0ca384f2b1826df4c2015e6b1"
+        },
+        {
+            "path": "src/@app/library/author/application/get/get-authors.query.ts",
+            "integrity": "sha1:a0eefcded905dce6082d7a8a3e32b3e678a16da4"
+        },
+        {
+            "path": "src/@app/library/author/application/get/get-authors.service.spec.ts",
+            "integrity": "sha1:5e47641628e0d7370f44a682d342ce6a584e7fbc"
+        },
+        {
+            "path": "src/@app/library/author/application/get/get-authors.service.ts",
+            "integrity": "sha1:0777fd4a1865fbbc13b0dfcc7a0c55e6a17bc62c"
+        },
+        {
+            "path": "src/@app/library/author/application/paginate/paginate-authors.query-handler.spec.ts",
+            "integrity": "sha1:e26c231691141c161faa1fe5f9511bc9853aed22"
+        },
+        {
+            "path": "src/@app/library/author/application/paginate/paginate-authors.query-handler.ts",
+            "integrity": "sha1:f823bd2890eae9d61609a4e33ea2e3fd1b3b303d"
+        },
+        {
+            "path": "src/@app/library/author/application/paginate/paginate-authors.query.ts",
+            "integrity": "sha1:d82c9341f0a6596b7c90b0e37d5d8f429ff242fb"
+        },
+        {
+            "path": "src/@app/library/author/application/paginate/paginate-authors.service.spec.ts",
+            "integrity": "sha1:87734ce90df73b3dc45a49ddd49fc940bcd4edb6"
+        },
+        {
+            "path": "src/@app/library/author/application/paginate/paginate-authors.service.ts",
+            "integrity": "sha1:bc152f702a3d7d550a5dd39e8fedad524a459b12"
+        },
+        {
+            "path": "src/@app/library/author/application/raw-sql/raw-sql-authors.query-handler.spec.ts",
+            "integrity": "sha1:3ef19eb28839b63cf49e06c7e591154243effe60"
+        },
+        {
+            "path": "src/@app/library/author/application/raw-sql/raw-sql-authors.query-handler.ts",
+            "integrity": "sha1:53cc47a382317fecd888d01de42acdf5db7e30a3"
+        },
+        {
+            "path": "src/@app/library/author/application/raw-sql/raw-sql-authors.query.ts",
+            "integrity": "sha1:97c333696e731d0654a27b567a7c6c15b0b7da0a"
+        },
+        {
+            "path": "src/@app/library/author/application/raw-sql/raw-sql-authors.service.spec.ts",
+            "integrity": "sha1:584f578a0405608342147c2e16f750bd845edf6c"
+        },
+        {
+            "path": "src/@app/library/author/application/raw-sql/raw-sql-authors.service.ts",
+            "integrity": "sha1:003cb2f82a5c3a0275417217fb89d2511c43e2bc"
+        },
+        {
+            "path": "src/@app/library/author/application/sagas/author.sagas.ts",
+            "integrity": "sha1:08768369f9f8d0290774a2869be25e6b1711d6ee"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-author-by-id.command-handler.spec.ts",
+            "integrity": "sha1:70f6a935404767fa18245c3a9b2f4b20cdd4aa64"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-author-by-id.command-handler.ts",
+            "integrity": "sha1:793186a33436b72422903d46a8b57bc41ffd7d2e"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-author-by-id.command.ts",
+            "integrity": "sha1:4ac19dc801226c5e7ae91f62daf0a1fa08c20cee"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-author-by-id.service.spec.ts",
+            "integrity": "sha1:9506a7afa3556d436288e58ff8605e6e69411643"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-author-by-id.service.ts",
+            "integrity": "sha1:1b03c868677659e5cdc5c6078cce2cb352cbc72e"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-authors.command-handler.spec.ts",
+            "integrity": "sha1:a7b97d2a1e23c602ab239ecb96094e5017dbc18b"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-authors.command-handler.ts",
+            "integrity": "sha1:8fb3fde9eb0361ce680cac26a0050e22ed223cf0"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-authors.command.ts",
+            "integrity": "sha1:0f9dc14d89fc19b54ceaba2c75581057f1bfc27b"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-authors.service.spec.ts",
+            "integrity": "sha1:97385aa09dbda94fbd1dada7f642ed1b17be071c"
+        },
+        {
+            "path": "src/@app/library/author/application/update/update-authors.service.ts",
+            "integrity": "sha1:498e1a350d040899411262f2f3bf6815843c2b78"
+        },
+        {
+            "path": "src/@app/library/author/application/upsert/upsert-author.command-handler.spec.ts",
+            "integrity": "sha1:20c0f60d39adf7c54815784b068aaffb547f0bad"
+        },
+        {
+            "path": "src/@app/library/author/application/upsert/upsert-author.command-handler.ts",
+            "integrity": "sha1:134a99106139d64d9e99934efca2eb59d7ef6058"
+        },
+        {
+            "path": "src/@app/library/author/application/upsert/upsert-author.command.ts",
+            "integrity": "sha1:b65bf1384358ddbc83efcb7d28dabd411029570b"
+        },
+        {
+            "path": "src/@app/library/author/application/upsert/upsert-author.service.spec.ts",
+            "integrity": "sha1:22d8499a9016018da71052a5f8ae0ea96869d369"
+        },
+        {
+            "path": "src/@app/library/author/application/upsert/upsert-author.service.ts",
+            "integrity": "sha1:78fa00c4968ee39cec87026927ce3114be905610"
+        },
+        {
+            "path": "src/@app/library/author/domain/author.aggregate.ts",
+            "integrity": "sha1:7093dc117c05dc52ae526b7874111e6a2c9b15cd"
+        },
+        {
+            "path": "src/@app/library/author/domain/author.mapper.ts",
+            "integrity": "sha1:add46aaf8b7f8a85f0cc0e54ce230483d2734d22"
+        },
+        {
+            "path": "src/@app/library/author/domain/author.repository.ts",
+            "integrity": "sha1:c0d80005eaaca99120b8bb4d65909efe667a349a"
+        },
+        {
+            "path": "src/@app/library/author/domain/author.response.ts",
+            "integrity": "sha1:16553fd34965ba4c4aabb5c73d5c4fde8b4c936b"
+        },
+        {
+            "path": "src/@app/library/author/domain/value-objects/index.ts",
+            "integrity": "sha1:7a44623acb6069dffc9d5370b983cb2b587e79c0"
+        },
+        {
+            "path": "src/@app/library/author/index.ts",
+            "integrity": "sha1:1f5acf5e44f9f826a185d075b38803461236ea4c"
+        },
+        {
+            "path": "src/@app/library/author/infrastructure/mock/mock-author.data.ts",
+            "integrity": "sha1:81948892721f3e503bc94d7914a2eccfb6150dd3"
+        },
+        {
+            "path": "src/@app/library/author/infrastructure/mock/mock-author.repository.ts",
+            "integrity": "sha1:fa7b0bd5c82d31e2da05c2791621e77b0ab7747c"
+        },
+        {
+            "path": "src/@app/library/author/infrastructure/mock/mock-author.seeder.ts",
+            "integrity": "sha1:b5c5fdde26729d548b0c9d48db21dfcf4b99c900"
+        },
+        {
+            "path": "src/@app/library/author/infrastructure/sequelize/sequelize-author.model.ts",
+            "integrity": "sha1:d0c8cb220cd7af2706d712663dc78a4d90806a37"
+        },
+        {
+            "path": "src/@app/library/author/infrastructure/sequelize/sequelize-author.repository.ts",
+            "integrity": "sha1:a825c9cd4a106799197a0df9a6296745292babaa"
+        },
+        {
+            "path": "src/@app/library/index.ts",
+            "integrity": "sha1:dc0f1ac1a7437b1974727e151d61b8fc4ff2b847"
+        },
+        {
+            "path": "src/@app/library/author/domain/value-objects/author-id.ts",
+            "integrity": "sha1:0d04dbe831692e0a218768495451f24a39df8516"
+        },
+        {
+            "path": "src/@app/library/author/domain/value-objects/author-name.ts",
+            "integrity": "sha1:a3301badf385e21a5420d7276a898131411452c9"
+        },
+        {
+            "path": "src/@app/library/author/domain/value-objects/author-surname.ts",
+            "integrity": "sha1:63a62cb8c4ec6c09571cb78c2ef84931971f6048"
+        },
+        {
+            "path": "src/@app/library/author/domain/value-objects/author-country.ts",
+            "integrity": "sha1:ab673279fa6a2b15f15c8f764c2fed8d0ec85dec"
+        },
+        {
+            "path": "src/@app/library/author/domain/value-objects/author-created-at.ts",
+            "integrity": "sha1:73fa92758d326fecebda0466e0aa1713e3bf2d2d"
+        },
+        {
+            "path": "src/@app/library/author/domain/value-objects/author-updated-at.ts",
+            "integrity": "sha1:2aac023765b0d363bc58c585b21b409ee05f1efe"
+        },
+        {
+            "path": "src/@app/library/author/domain/value-objects/author-deleted-at.ts",
+            "integrity": "sha1:b0f6b8aa3b0721833c3fae1932d27a388817a64c"
+        },
+        {
+            "path": "src/@api/library/library.module.ts",
+            "integrity": "sha1:02eb99c3f5f40f76d14fa6de88cf2b5cfb06085b"
+        },
+        {
+            "path": "src/@api/library/library.seeder.ts",
+            "integrity": "sha1:cacc9ce9c607b08a38547e5766e229828ffa5fc5"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-create-author.controller.spec.ts",
+            "integrity": "sha1:9cf42c8473d569566ed0ef83180b5f77d58ddc1c"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-create-author.controller.ts",
+            "integrity": "sha1:d1b6f6f888b0b9193a27de71e916746215bd8ff2"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-create-authors.controller.spec.ts",
+            "integrity": "sha1:8a486777158585805318fdb80dcecdb5aede2cbd"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-create-authors.controller.ts",
+            "integrity": "sha1:258b73b54cd037e4794e63edc8ba26408091dea9"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-delete-author-by-id.controller.spec.ts",
+            "integrity": "sha1:17c57c891a3cca8b42dba8005e0181594b2013c7"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-delete-author-by-id.controller.ts",
+            "integrity": "sha1:5c1836262771d5aaeff006f75edece430f743f82"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-delete-authors.controller.spec.ts",
+            "integrity": "sha1:64b246ca736e298dfed6c25c5c04eb8f6e7a916c"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-delete-authors.controller.ts",
+            "integrity": "sha1:a48ecebeffc046ba4ac2cc2c32e9a1e4cbc5fe87"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-find-author-by-id.controller.spec.ts",
+            "integrity": "sha1:ece53d202a8cc5ea9ba38a453b4da974b5af93a9"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-find-author-by-id.controller.ts",
+            "integrity": "sha1:069c3f4c8d30358bfc7b8e7842161c5f6a0b359f"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-find-author.controller.spec.ts",
+            "integrity": "sha1:b46845f3526cdc5dfe5f29ed6baab292ea60bd9b"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-find-author.controller.ts",
+            "integrity": "sha1:e21d9ac062a1fea8c3c96892225affa1130e4d05"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-get-authors.controller.spec.ts",
+            "integrity": "sha1:48d533b7295f4daeeaa732105f7de89a86bfbcbc"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-get-authors.controller.ts",
+            "integrity": "sha1:d77e203b50300355c6c90c3d4671119dc66a80eb"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-paginate-authors.controller.spec.ts",
+            "integrity": "sha1:88933438be598bdc3542850edc7ff4d208fab861"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-paginate-authors.controller.ts",
+            "integrity": "sha1:ffee70c784c40286004da5446d6f53f363e79266"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-update-author-by-id.controller.spec.ts",
+            "integrity": "sha1:9281367b9dfad1fb9490a212843a8c4a20308474"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-update-author-by-id.controller.ts",
+            "integrity": "sha1:a3e57d3a775a4ac39ccc48a0aee9192a0b4a4e90"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-update-authors.controller.spec.ts",
+            "integrity": "sha1:9a98261370c7c4b9b6237de03d1179885c1c619f"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-update-authors.controller.ts",
+            "integrity": "sha1:97bce4ad488aadceea4ba83d3d61e39387398031"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-upsert-author.controller.spec.ts",
+            "integrity": "sha1:e23c31a62cf41ad7cf08970505917d277b551b1a"
+        },
+        {
+            "path": "src/@api/library/author/controllers/library-upsert-author.controller.ts",
+            "integrity": "sha1:c27a1c3e357daef4c8bef6fc6bafec469d074e2e"
+        },
+        {
+            "path": "src/@api/library/author/dto/library-author.dto.ts",
+            "integrity": "sha1:3a47f8048fd1515532a0ccef9531423d58522987"
+        },
+        {
+            "path": "src/@api/library/author/dto/library-create-author.dto.ts",
+            "integrity": "sha1:4fe75dae938979e8647f86cceb16ca00a06ae6a1"
+        },
+        {
+            "path": "src/@api/library/author/dto/library-update-author-by-id.dto.ts",
+            "integrity": "sha1:93853ce4b5cf043cf1292202db884ce3f030f645"
+        },
+        {
+            "path": "src/@api/library/author/dto/library-update-authors.dto.ts",
+            "integrity": "sha1:a1f1728090ca822bc4805a0859096f66436a291c"
+        },
+        {
+            "path": "src/@api/library/author/dto/index.ts",
+            "integrity": "sha1:37fc157f865959c14fa5b7e5cc50fb84986c13a1"
+        },
+        {
+            "path": "src/@api/library/author/graphql/author.graphql",
+            "integrity": "sha1:3eebcedbbd2e22c999cf3b1e765dca9b23a7c932"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-create-author.handler.spec.ts",
+            "integrity": "sha1:6599c4558b0fb8f423a42ee1bf0383ef95371e88"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-create-author.handler.ts",
+            "integrity": "sha1:fece772921614e5bb36a1bfacbcc2dbee9dfab3b"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-create-authors.handler.spec.ts",
+            "integrity": "sha1:43a725276894323965615806ba46824ac4e06650"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-create-authors.handler.ts",
+            "integrity": "sha1:b7ea2848a0dded84375a2564c8ab3204e613bf97"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-delete-author-by-id.handler.spec.ts",
+            "integrity": "sha1:d057483d64a92c688304ff34d1d2c5df14f2489b"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-delete-author-by-id.handler.ts",
+            "integrity": "sha1:cc869e81291d6176cbd61d3b6e042a91e7dc82c9"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-delete-authors.handler.spec.ts",
+            "integrity": "sha1:0bd1a42382ff02c5de9a9da3c9bce73081265372"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-delete-authors.handler.ts",
+            "integrity": "sha1:0dc28861fa54f30d66aad1d76c36ec6a4cbcda22"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-find-author-by-id.handler.spec.ts",
+            "integrity": "sha1:1358365b903242aa4823727724f1659f31d95a13"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-find-author-by-id.handler.ts",
+            "integrity": "sha1:5dc259edb43db32f47e42874dc83b933c4b37618"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-find-author.handler.spec.ts",
+            "integrity": "sha1:5b4373afd76039b51ac2bcc01ce62df9ea464208"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-find-author.handler.ts",
+            "integrity": "sha1:69d323cecb3ccaf887c16eccd216f4f0a69e07cd"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-get-authors.handler.spec.ts",
+            "integrity": "sha1:4c22de5d5e1825ab81dbd9f02845a15da8ae8ea7"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-get-authors.handler.ts",
+            "integrity": "sha1:4cb931c4745ddf23f90782a4e3e65f4665a6421e"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-paginate-authors.handler.spec.ts",
+            "integrity": "sha1:38b9750467d74ad0dc7aef9a7fa0f9def364b36e"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-paginate-authors.handler.ts",
+            "integrity": "sha1:e8903d3e80bccb2b0ca198b893ef85e9655f238f"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-update-author-by-id.handler.spec.ts",
+            "integrity": "sha1:f1d50c559b53c20d4276473822635912d0137b83"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-update-author-by-id.handler.ts",
+            "integrity": "sha1:0878823ab6f96a95377d5bdfab1ff15820ec2794"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-update-authors.handler.spec.ts",
+            "integrity": "sha1:1a1af6555eddd5eac34fdd8efab5e4c387ed8c27"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-update-authors.handler.ts",
+            "integrity": "sha1:13414ae8e946c6e96d1ce0a4b75db089d6871833"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-upsert-author.handler.spec.ts",
+            "integrity": "sha1:e3cd3b567b7155ff0223b6e7f2277f4ac82688e9"
+        },
+        {
+            "path": "src/@api/library/author/handlers/library-upsert-author.handler.ts",
+            "integrity": "sha1:38a431716739b6f640171c866def4f4bc08862e5"
+        },
+        {
+            "path": "src/@api/library/author/index.ts",
+            "integrity": "sha1:85bf755175f72620498a28b135b9444556488d1d"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-create-author.resolver.spec.ts",
+            "integrity": "sha1:8279e153c9217935d8f2a436ad0a86d44ec8d065"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-create-author.resolver.ts",
+            "integrity": "sha1:3941eb89a75b83933939ce7e77eff60022a8a2bf"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-create-authors.resolver.spec.ts",
+            "integrity": "sha1:0f15b4748637af2b768b618c70c6da45f392f3f6"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-create-authors.resolver.ts",
+            "integrity": "sha1:e87b11d8ae37ef162b4042c52f7e49cadd1ffd0b"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-delete-author-by-id.resolver.spec.ts",
+            "integrity": "sha1:4597ab724044f239e13f7364b36a5f2d0aa3159b"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-delete-author-by-id.resolver.ts",
+            "integrity": "sha1:785f2c06e957ffec893d36ec46ca4d20eda65682"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-delete-authors.resolver.spec.ts",
+            "integrity": "sha1:2b78cbf2f12836920b93c8531b9993dc533c0765"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-delete-authors.resolver.ts",
+            "integrity": "sha1:a35492c3eb5a59396b709335763998aa7ea02035"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-find-author-by-id.resolver.spec.ts",
+            "integrity": "sha1:2e42b271c602b94ca74bd5ee3a8f7afa81b93afc"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-find-author-by-id.resolver.ts",
+            "integrity": "sha1:3cf2b70c69f167d9bcd1551d660120a9ee51e482"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-find-author.resolver.spec.ts",
+            "integrity": "sha1:f8fc3b4668a8a67f5821710c47b5013d98d33c80"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-find-author.resolver.ts",
+            "integrity": "sha1:4f7017ce16329219dc98acc54ee20932e3cb6b0a"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-get-authors.resolver.spec.ts",
+            "integrity": "sha1:1044c12415e70f502b1cfe8105e45b5203ceec0e"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-get-authors.resolver.ts",
+            "integrity": "sha1:304c21755750c7cd0e4c5955a9fb303075a31cc9"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-paginate-authors.resolver.spec.ts",
+            "integrity": "sha1:61c1d898acbcca24ec2a75565d0353cdaa5dc58a"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-paginate-authors.resolver.ts",
+            "integrity": "sha1:8d78a2a354dab886fec62fc62b848cc21d8d24e4"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-update-author-by-id.resolver.spec.ts",
+            "integrity": "sha1:49c0a3e792039f70cd341e7ea8080e3223734256"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-update-author-by-id.resolver.ts",
+            "integrity": "sha1:ce9f70fed97f321acbf46437676bd0fab8bedc02"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-update-authors.resolver.spec.ts",
+            "integrity": "sha1:13a3e11a9a76057dbc819880bbc668620bfad6ef"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-update-authors.resolver.ts",
+            "integrity": "sha1:7c76a2c79d7864565d7f4977a941a5d2e4560738"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-upsert-author.resolver.spec.ts",
+            "integrity": "sha1:34497471ee600fed409d4c362ee00b485b236ddc"
+        },
+        {
+            "path": "src/@api/library/author/resolvers/library-upsert-author.resolver.ts",
+            "integrity": "sha1:b4832f336ed3587470a64bb493c1f6e52158201c"
+        },
+        {
+            "path": "src/@api/library/author/seeder/library-author.seeder.ts",
+            "integrity": "sha1:70ae44bc244bfc5b3a881415f5d46d1ccf1d03f0"
+        },
+        {
+            "path": "test/acceptance/library/author.e2e-spec.ts",
+            "integrity": "sha1:b8581bee35977f516741274606d3c3b19d3a8eb1"
+        },
+        {
+            "path": "postman/library/library.author.postman.json",
+            "integrity": "sha1:7fa842ace413391bf228be4086f25ace6d7c087b"
+        }
+    ]
+}

@@ -1,0 +1,561 @@
+{
+    "info": {
+		"_postman_id"   : "d9bc3afc-fd40-5505-b57f-8f5d5118e01b",
+		"name"          : "@app - library/author",
+		"schema"        : "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+			"name": "GraphQL - libraryCreateAuthor",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:LibraryCreateAuthorInput!)\n{\n\tlibraryCreateAuthor (payload:$payload)\n\t{\n\t\tid\n\t\tname\n\t\tsurname\n\t\tcountry\n\t}\n}",
+                        "variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"name\": \"Small Steel Chips\", \n\t\t\"surname\": \"glnins9ghljg24o4insapbk7dprdru23r8u5v8pts4b7cu4t5jgdemt9qmo246zwqjgqsg2uw9gzutdz6bq8mtm3i4ktiuyzxzb6rl43hpxeej8uj0491kagidukijqorcml74tb021vqhubweetpowwyqi6yew8qp327vaklptavh26orxinzfeaamr5770fskzaljnd0myuwhkjmjteft455sqt8rduvk0xgo8wer0flusd56nofzp3swumh\", \n\t\t\"country\": \"2hu0jya26bjs6yraavx4yc6ipwnfoet95nl2dyfmnq0p2t38vnrr6gedir5g3ruq9zt355cxybh0gcsx5b48clofk65nry96lqk9m13bkeg1rua61niot4ww5kylhnrrz96s14ekx67vuplg0sitnka7dnthyv1790ghokydr0swehds9yc36sxsx2ot3seu24s54roninqxivfp861jgp3o8xl6wrzor402xukn4q7eo08m68kr4zb1821wy9\"\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - libraryCreateAuthors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:[LibraryCreateAuthorInput]!)\n{\n\tlibraryCreateAuthors (payload:$payload)\n}",
+						"variables": "{\n\t\"payload\":\n\t[\n\t\t{\n\t\t\t\"id\": \"c424ca1a-edc2-4a0a-a445-b1dd5096f552\", \n\t\t\t\"name\": \"Practical Wooden Fish\", \n\t\t\t\"surname\": \"490cbdsg5t2y9xqdabpfhqmtfc9l90fwso0gec9vs4l02171x047w0zu3pafxxhlelanjgnpxjeaxw6tys1lpibur5m67mom5filt22dpl97j2t5zl5x910cvblyffdu29fqtgnpb6rr0ijhvm5em6rqxxgfuvqqx58g7cca2f0q6l7pq1b4vejvbhzgm0ibsi4f0soykgd58y0h6mvjogv7zqcvj7o4s8hz2twv65vcp2nfhzz89g82yoevnh\", \n\t\t\t\"country\": \"ais675da10czsdz1fxqrvxs9tvpes4f5nzv4so9u9mxel1eqh8knu07kp6u04811pw3b0i9pxnezz2byfzpba19pjf7phayl13l0j8e18xwhvh19zvkusxq9fvik4eig7wqhzgf0x4wr5obfqydijn3r8gvplkumgtsrrslb5jbolxyr7h11gn2xe04eyi6ve6mk5rhunr0357s9zvkchoue13w6pjza155w6j5lk82kvokq8x144zck6vv4bp\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"33db3ed0-86a8-4841-a340-356bf9262693\", \n\t\t\t\"name\": \"Ergonomic Wooden Hat\", \n\t\t\t\"surname\": \"v3wbclbpazyg3zb4g3r074zexsww89vfhcyrnxbqo08y8or7bkprdwqcxqqduilat81yfvu0danjq5xxxev6y8tj9lxg4e617v3enuvcz1m68o2sgbgc2ahmziyxfp5y9yim3aolz9ddj7w7n2of9ksrr1iwclequ0227syza7s0ejil8m4v3tw3fomrq7d0e8joetznpc17zlkcssagskzum5qrpqfnf90nsxw870qul5s61sxq2ds93ncxp0\", \n\t\t\t\"country\": \"5y7l71v34h6yfz1ul2gjzo81wxyahqmjitwgmy42pp0p50nzvalt5t4s7hjmbgso9fyv5hgfmkboqv0louyttob6kyuczpsxr3s2c6tm18iccbo810gicd2de7eg5boempumwckiwxt7ahn4g0lzsou8jqfddtxm15fv4dsmszjvc8t9g6iamad72ey8ow2e9paas66egx118sixlfuvwkqcus33oo9uw2uzyior55zvf7oipo38wf0atdygze\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"42cb9877-c268-4ad1-bd1d-0c83aab937b0\", \n\t\t\t\"name\": \"Licensed Metal Bacon\", \n\t\t\t\"surname\": \"5rf2iojqin6ou575w1fcjoudlextrw0hpfj5yw08pe6kbt6piq0syd7mtk73ss886ghi8mfkvou81w1cqe0faiambr135h36dazmf8qdxiv1up8qbarrmxgdt81qfb6iuqfho76zwcyzbdstxukrljgt7phu34k6y2qtdnx549fb1dhzsg7u4j6eotuaawpmmohs50igzhp9sdgfms3eb40b0hnj6rl9t7qh8wfiu68q5h46afmvhz94ezdgpr\", \n\t\t\t\"country\": \"vobhexuuc7ekyczw5em0xqz2gtcimtzr1he7g7z34qhvk6gtcqlhw6ddyh90b2jnsr8rueadchgvatjl1lfmbvziuy5k99v6t2anob8u20bwlhtcv8ctga5x0sk86qfdka79rzltrn8lfwjkyxtrdbyto0ujrlfk5bq54tra4lbg7x4jo1wrhfd8h4kr2lxv1mx55kqwx6bvyb2kuqkhz2rq3yllov4yllygc3s5dgpe242ki2yxfdhk2btilz\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"9cafd75e-32c6-4155-a516-3abeadb20205\", \n\t\t\t\"name\": \"Gorgeous Granite Mouse\", \n\t\t\t\"surname\": \"ywgjg4uxuurkukyt4jcvusuptwnfmr3rnykta2fz0umfhag88gk2lkuyawnomno7csv610zjz2j818nlw2m5wnmnd2a947rx0ra1f80ndq3cgahd3bz716ckxo3suinrm0nw7w3awju4kwvqnsj6hx2291qaed8rdlap5ryb54ijcd6ijznkhgo5y3r3zi060i38vroftmlc088f2n2ceofhaj9pls52gmg70dchmhiwi9gmq055vh9oivxip1\", \n\t\t\t\"country\": \"067l78ksql25oq5yyzux9su2nfx6n3lj7zrvnie3agk08pe6hjiq183ytt3fvy2u9prgpwmvj8g4hrccasgkvkp0ghbf4fbg3e4kroziwv1o9w0kcwsh264z3e44ezt8lo5knr32288bs0k6u79l2obmk9x7p7khu1wey2xd2syyawfwbannte0opqj8q4eo0a8ih94rxv7gs0tetup4cv7738spoo67sibyrjfa844k20ia330gpwfq0g1yl1\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"c3a2bb5b-377b-42f7-ab8c-c0b88e7df780\", \n\t\t\t\"name\": \"Generic Soft Sausages\", \n\t\t\t\"surname\": \"zrhubflx1vyj22agbl4l4k3foldhr41artcw06aub9821u5lm37bmv153wnk4xxiypax4xizj0tub0cei70d01ophv2ed5lse4qiutmaereyzve0ler73w8nh1r05vyixyck3lyfzxn9d15pa7x4ibxngnc08lrvspa43rati92brq5k3wov6e1oqff7zul706zftxycjmiwtm2e31ng2hb0b3n7zfjpupqrs23dby697xh5opnh2l7rk9t4hl\", \n\t\t\t\"country\": \"noyhmdj6jqkb8c1506tggpczxvzn305efqwul49h79dw4swc7azj9icz9sw28t8krw4j7h8tt55nhwngk7dswnnn8o7loohw92ejajkzaa324c8d2njayavz9el6r31qxqeo7tqzg3zpuus427nogjmovk5nrr05i3dzplju3pfglq6j4ljn9c3mq480jkgr8j1zhx42ubwigk060u7liyilgiu1f87i2k7a0m9lk0zq0ftbnlthbhx04vn0xt\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"2152f779-4c7b-4f85-a7df-29a52794d89d\", \n\t\t\t\"name\": \"Small Fresh Salad\", \n\t\t\t\"surname\": \"8vpgepsxge2lbf4o9a4fzyn2ol8oqoehv4icbixmpzft4dhzxc1xnh40scq6dnxr9x2q5y288d3ks7spt85388koikpiwk38pk2z7wznqsatbx3rvqrsums5h1cj1lkqmsoe525o83qdlmdpuenbepa3vl8tsgnjmeer1iccbo3ojx779cbg39uzx4k4o6idygrjaoy8vz2r8912fc4b6o0ll71ayd4h79p2kafyr6ko4soprwfqq97vwk1s3z\", \n\t\t\t\"country\": \"m6doasg3zh2h8d2az3lzn814l09nva0ww5vvbxu46wi15sfv2fdaeuuwvt4wtgsofn8xk9ot3ksojjrrh3dpl8eyafk85266q3dghe5341zolb6iiv714kzblsq02g7odnd9fzwakhtbz9yvlr9j69jh8l0qilci3xvzh8pybp25dnlll0plqpaurycoowjx9uc6nxeru9yclgy029kw4cyormularmv2miimha0tn0b7594geh5vqfdgm4qcz\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"d07ea0d1-da62-4004-8927-90faf97bc0a7\", \n\t\t\t\"name\": \"Ergonomic Wooden Bike\", \n\t\t\t\"surname\": \"w26wgneeta5yy0s74skm1faph7lef1g7dkbjnqq3aq28id96o5l76royy3ahxmaameodqnfdf1iq4bfcg4g3h9foyo4w8btu2rgcuz4p52nssq556e1ilrubsa7j15de0uy9afxswctmvk7ijw32vayngi45eodhn0halcfzzh5mzhlrsxc8tdvnyjo6a3pcudaqhdlrn2xno3j27oswrj00hytkd3qot5smkaag8r7t6gchy0x5xwtev15poy\", \n\t\t\t\"country\": \"zqazyooc5m0js8qcry6okpvoi5g1f981z9plry8ldxgdw7x84cjo6qdyj07x4r5enxhj7xzkw7kng89n1gbp790al7dz8vobf9mxu30ijy995j9o0xhzk1qlr6m99y27t4ocllkl93pml5fus86f38bvifp7x1hn35ieugyilmre33fbtf5eaoh2zm3baofk3gx1fl7icg6gsjtgt54on9sn12du941yxs3wqpdtc91rub5qwg6a0ktodx9xuh\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"3883f37a-2cef-41c5-9333-1e42baa520f5\", \n\t\t\t\"name\": \"Fantastic Plastic Pizza\", \n\t\t\t\"surname\": \"7ds1btvt7z25gu0go2ncc1ywriig0ol6ysps8gus5wiknijtcpqafd63i4xgo7g6og7lpfx8be5ohev9c71y218onokx9ivpjg23jme4n3gwh61bc38p8u5hjvhq4mooitsltfci87jtlu6ppwvp6eceekcy26kxwzshjka4ost9yea9a6umbvp2vshywycn8qk7nyzpvtzhun27r2lyzie9rix13mqzqpnc4ja4cz9itcnld72dxp7vda1xyo\", \n\t\t\t\"country\": \"q5dt3p6r3ha95ut20k6uzc3t8ebrzlua61yesst7lexcgr07p6c396qvkqwppa1h644qawsysl8k6pouu0wyq9k3dkr8413a3c3fp56juslexabhbq2o7k7aci6jvjl3m5188g2i4wfgvh3w54vdtvk8auvmxb19zwlp65l132axwzy39ewc7kwen0z7oa7p39e0uv804wk4oc9m7ota5t96zl7lmxg1rpo461z2fe3lgpdh8hmexl9v7kmvad\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"e935b4e4-5ec1-4c53-a0cd-cb8b87a13c9d\", \n\t\t\t\"name\": \"Awesome Wooden Table\", \n\t\t\t\"surname\": \"e1fpsuou9b3odrhanrgcsoo91sjnv9a2fzkx7g0grh4dojoiadws13gezzevijut6w5ekb5oondl0lbsv7eu0zoc2ny9nnzunzpx2wga96cjwl7p55qidmu8b5y8qupvezkiugocy07hhrejs1xy00btjxy9iadce6mcs52hec7egysqjmd8lxhguxnwxh66tj549wh8i715gnq80bkme1vhc0pevyvhqujuv1t68rk906is7uk9jmv3x0ks3r\", \n\t\t\t\"country\": \"c1dpbj6g2nlqvtaqa8h4rtq60fz7kgwiod401uzlx7bhu77qoj74npvjwzq6gjte2ow3h9q6fhj1v1hz8l5ryb00gmhcus4kst30p1z8hhjfnzlr5fpejq2ovceu7agqtrmm6ahu6i4uspt60lvntjxi77a2x86o5n99nzsj82asai1ifw9fa2yqj1q6w3aibek1diec7je5z26oebvug8soaneoarzrxw97s0xfdfj2abpjpcy4qa4r0fj8go\"\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"f1242380-ccc4-4055-83f1-5d8479a58740\", \n\t\t\t\"name\": \"Licensed Rubber Keyboard\", \n\t\t\t\"surname\": \"v581jwq1rq7dj6s7dvy5kngl3gqdtss14vd4u531j6fusxvgcdk5qqa3uhitg7ywm9otiatj6ahavxpipvsbbfee7g69kajdj7ikbc5ydpsk4bocs8lny7t97nxoduml8n8z85x22jsuenbx5o3iqye5h8wbtvo5fzgroqx4ych9e2vefhm3f1n0cwlumm6s6rz8xcpvv5qjdblxklgm8anyfcpabrvyqxooardryz3jgg40c376lq3ty8moy9\", \n\t\t\t\"country\": \"6ksehbxq1y4qbkflrpc6thkn9q31cq1fg4qsxwc7pu422hwylmn1kp8o41plwl40yf054owkgtc7zfeivuz3dn80nmpx7yxlxyvvsg89he73w1utkyzbyvnpeoyrs1bks5khfego4hew811zjsnkyhqiwi8xkbpddw6ufhtkgzayozggnpezejkjwl8obmwxu32ndaptqu3qt7na4s2yz9r62t153eas4zittcd4dhbbmgnupcvkb5p028y1dc\"\n\t\t}\n\t]\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - libraryPaginateAuthors",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement $constraint:QueryStatement)\n{\n\tlibraryPaginateAuthors (query:$query constraint:$constraint)\n\t{\n\t\ttotal\n\t\tcount\n\t\trows\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - libraryGetAuthors",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement)\n{\n\tlibraryGetAuthors (query: $query)\n\t{\n\t\tid\n\t\tname\n\t\tsurname\n\t\tcountry\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{ \n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - libraryFindAuthor",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement)\n{\n\tlibraryFindAuthor (query: $query)\n\t{\n\t\tid\n\t\tname\n\t\tsurname\n\t\tcountry\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - libraryFindAuthorById",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($id:ID)\n{\n\tlibraryFindAuthorById (id:$id)\n\t{\n\t\tid\n\t\tname\n\t\tsurname\n\t\tcountry\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - libraryUpdateAuthor",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:LibraryUpdateAuthorInput!)\n{\n\tlibraryUpdateAuthor (payload:$payload)\n\t{\n\t\tid\n\t\tname\n\t\tsurname\n\t\tcountry\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"name\": \"Handcrafted Wooden Table\", \n\t\t\"surname\": \"bqm6iola0ni9ezaenumyjz7iaz3mt3fyi5k8v8c5bth7uy3z7kmh2vtbdd0zsziuy50mkqzbultwl9ewehxyf56luu7k28oorihcfpzwupdbxcpi6mmijed8fcvd3kz8b9liy5n62z26lnodn1qlcqf3z65jp8zcmjwihmcgchq2p96sfdiyfbzzzhvs8khntnuyqo7rad4rml09keb6gh88qbi4744l4poax3nttsxsrzghv1td0013jplfsz\", \n\t\t\"country\": \"jyyz6t6oqafp9iwckuashh41rplhu9p8gjdwovmpikazr8q9ovfrggdiwsx3s4tp1lyd3rdf7uvtpgfldghzsc06yflpvutx7dds43gyzj0shojl24bcfbdri0f6uxw5r7nqru1fr5wcqhxai2ca7vl1z86l64crqu0pblvl11a167ft1angoi0bonyiw15n64ij2kiisyk0o5icbg5aa9wpp7w3ee9p18c5uqmjb9nm9fvwe73ep9ha3666yd\"\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - libraryDeleteAuthorById",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($id:ID!)\n{\n\tlibraryDeleteAuthorById (id:$id)\n\t{\n\t\tid\n\t\tname\n\t\tsurname\n\t\tcountry\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - libraryDeleteAuthors",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($query:QueryStatement)\n{\n\tlibraryDeleteAuthors (query: $query)\n\t{\n\t\tid\n\t\tname\n\t\tsurname\n\t\tcountry\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\":\n\t\t\t{\n\t\t\t\t\"[substring]\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - library/author/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key"   : "Content-Type",
+						"name"  : "Content-Type",
+						"type"  : "text",
+						"value" : "application/json"
+					}				],
+				"body": {
+					"mode"  : "raw",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"name\": \"Rustic Wooden Salad\", \n\t\"surname\": \"ydvyi6yodmv4rwksmvb3rxkki9rjlfp9ljd1niaxk0vyatbw32i2dfdw8cx63kclc390ezmrtq6kc9bvcbdukrih7s8ebvqxhqqih1notm0vnd3ph284lzwdt4wulken8kv5nahoub06hmv7s4r1l8zfoowg3eymq056rni7axzjoiywpyb9e81327oz8buc3uudqyzn6vmemo6gqknzh507tmvrblnsfr12i1ad41uqjw5w2nvps6u1dfwkbv\", \n\t\"country\": \"auvb0uwetlhopmjsedfvmyomitkexo2nz38r9xl10o4n6rbsypsgkcb7q0q1kcyzeom1r8peyl9so4ew7s740fxgnad8y9fy2dw26mhlc63bw6ejwe1alu87le89c17ufz7h4w3sv2fyri9i6m8iipp4bm4yz8px8c5066nsfo9ab8xb1vip5gpoyohhnimlosyv8t8t5t75jigm0epa6yaajdqgzobvgpe2cu4c2stflf5l2p59bn84jtvf2x\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/library/author/create",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"library",
+						"author",
+                        "create"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - library/authors/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key"   : "Content-Type",
+						"name"  : "Content-Type",
+						"type"  : "text",
+						"value" : "application/json"
+					}				],
+				"body": {
+					"mode"  : "raw",
+					"raw"   : "[\n\t{\n\t\t\"id\": \"db1f957f-5025-4d1b-a210-9ecd461d4282\", \n\t\t\"name\": \"Handcrafted Rubber Chips\", \n\t\t\"surname\": \"pajrrlxh6eqm2gvi2c2bhzzvjbjxur53hmctbp6jz9t6tdn7nk3n5hlvyyrrex13r1xzb5xxq8f1sathzu6zqtc1r93lnn106su2anbigbp9uge8jotsdx2iqelbrrg15zxuv9u3gdsbj0gfy4l7n1yobzg8adjr1uw48tvfa2jn4u4kopvnyjju98i0v05qxpot5kge67c7la5wge54dxpbbm159opnjdci3ibyirrcxl03gfkbhtq5ek003s\", \n\t\t\"country\": \"077obzoiout8it69umq7zxtcomjorqhi0znjw27493i1ra0sf5tz26i9kx96ia8juykh6kcy9ccnockzta6l3rb7ciramh6iypxhrmm6uz34n5d2yb8pyyfpffr4ryqfdlq9neoq0fm3esq2v5l0na7knobp0cgdswziqm8dl4xewg6kklxizelr3awvei9wqih7xktq7qlew0yttmx0593ymaljzmld4bqlzioz5g61mklytbogxypha15ufl\"\n\t}, \n\t{\n\t\t\"id\": \"4995cc68-8d80-4b48-acf8-1bafcf58405a\", \n\t\t\"name\": \"Incredible Concrete Salad\", \n\t\t\"surname\": \"ikg4c282v40xisvmy3m0b331ee4cw947nv11mjop9fictfmu5jcy1gj0s2e6a4zo9dwc5r9j747am7w7vz340je46hmdiwl70e0dws3xuhh4wwxg83j8g4zl6dkwt9kpgxucggz6nz8jpl3hglfw1fdzofvmwtset221uh0q6uai7yuet0o88ye8lhiudygthmak16dtfidup8co9i0lb9bkqru1c0ibrc6qk2ymczyxcdnab1ez7920yetapf\", \n\t\t\"country\": \"ljwr9go6gkyosh25up9hq5b6mxyko92d48jpcjpia0hsr7jegw1k9pkg5ea4zlp5zyusetk0e3g7juseyao2iw9qqet0t0vkkzty9vj1vrd38ol7xjhfth0jrbih83hbeqzavcp224s6novo02hrsh8qx4gbyiv2ryv2jmsve7vlqr4ek37rpqzpvj10hd0w5m8ai9nl9jdm5ff5zy037yjoy88omy9y33akzly8mlhcvg9cnw9vq4nphnmw3g\"\n\t}, \n\t{\n\t\t\"id\": \"03277d4d-075e-4acb-be80-b581f362f644\", \n\t\t\"name\": \"Tasty Fresh Towels\", \n\t\t\"surname\": \"5zq20yl4ndu30nx32h120wwsakfsf6obqnscxhfyyz3m77kotl94eff2z0tkvdxnlyvac4wzhzrnozvximd4uhoke2oytqicoph4jr8nnsxi6i93qch1yncrkgghs4x0o8e0io33mkhumc9dwagx6rzh2wyjp29pff856ii18q59p2wzh8l4yj0p3pbi0z5mif9ihsrbalnuyix8n5niye97kk59s4ojlt0wpvzlaex5izfzo20buuhs0hbwit\", \n\t\t\"country\": \"4leom6rel3elpnv5yo4izwg36d3nhunqc01hnuayfu8o707xl3w74hlzwkqknfgvfjh9oc0nr6vlsvhj3pptkcrmf5r2yhlhqy6b9rsel2uzfqxtvj609ea9vz4vq41n7ttu8x1og5mjkh56atxtcbhavo7un9eo0rkhta2aogfzejybhjv5e9nlmkfv6qx1d3qvswd2kfd7h3s5fdowlhuyop4kpox29dgtl2awy1o4sy1gsvskci6wmr1j6n\"\n\t}, \n\t{\n\t\t\"id\": \"3a6bf8a7-3911-496c-a0ab-3462e558afc3\", \n\t\t\"name\": \"Sleek Plastic Shoes\", \n\t\t\"surname\": \"ajaffkwdgubnx4jb3ymorkgo7yf6mm4zunevjdaond33bkrpy71jxcg5ezon79jf7gh2si9hlh461ygvs0dsjhi4bzuqmjijwvugaqzpupax222rcx5qz1lsonsnmxvdp6miqblzsul25nhuj70jkix1h4as54qprbmx5l83yqxit17u0x9mib34js33h4vzg0j3gmwfkrkd58oacekf63aiffm0fnkyntlrx5tynvd4j18wrwbarcyz5wrreu\", \n\t\t\"country\": \"vdmcyya3jzrgv3svivd0707c47db2m8zn3snx6v9pidf9w6dc8kzhq4rmwokto5lvl2uwwb42a8zkmob2zyhqeo171ymwhnk5un1ox5z8n04myz50e12lhhnvcewkts2o86ooggghj69widhu0r0lx052nfsqvl9jprbcqyt1kidqk6syva5cvbuhro27igtj0m4ei1dwjhgn71m985h1bad5q3rjillm8qm0xtlnr89eiyfx8zhatjp58phqf\"\n\t}, \n\t{\n\t\t\"id\": \"54650fc2-d84b-4920-a472-b72b93d53779\", \n\t\t\"name\": \"Fantastic Cotton Ball\", \n\t\t\"surname\": \"u6etqj50hq5ijkl7u5sngiqhmy8b6fkg75fsdtxsh2qiz60186vuadiwpbxmjzxsbhs0hdr0o8172zp7apup0azj7y9a1jrrfsg3l1obj6o0278r0f560sfozcdyr5fgahueqczdi5kb5faovymuwoiq9uf38bdftpi95lngz9xppdpf7kfxdiktzy5oxkivbd7wp64w3aam44jeutjv992fvqc16537lslawbtosg8f0tkpw3335lt6f7p0qm\", \n\t\t\"country\": \"3ckbjg9nhcgh4y0itu2lbepjufojs4yuo1niuxiqjrr3pit3s9iod2sxiq0wutnukshvuifm8fzifxq2t4x7mfpxo89k1h3al6g6hjas7jpn8g57cafa962sl2kawdxtp8f5ynit626n0jv7qxwdykke1kpsldlqy3nsm29rcjn49xc4l4ske11cllw3ir8m7orne4imojbt5jafo0aco3pw1sikxyinpb95ifzlfah3icpb3ia0fr2s3ify94\"\n\t}, \n\t{\n\t\t\"id\": \"e974c032-9b06-492f-8051-16aa62e5be77\", \n\t\t\"name\": \"Practical Frozen Bacon\", \n\t\t\"surname\": \"4ltpxtm86cc48316zw7pgpohypjhgmciifgkrakbk0yg9y7gmmeb0i03nsffxoais7sroqmq1aoj0kzplfar2q52rmsey1mnf569gcj8jlsc8ylvicnk7tq2mpuvbmwsaynceqpnpbxe15pj8lbfdgk3pf3d2e6am53dxvt7nh8on2rysagxrjpkebcrw4o1ljaqm9zuwg3fib4dqb9zz68zp812c5jdzv2ga671i8ry2w46c5385w7w1shkor\", \n\t\t\"country\": \"ynjwl3ea6a933vs2cn7t5841pfgtxdtk909p80xg7yydvyigse5ozxe2h32xposgq2oabuvo11ur5u15hfqg33cl7nq1s5v423rpz3gvydq1cza96sht4sjpbodj8uzhjwcac6hvu1f4rwuc5ieeq44kelwuy7x0ofs9lb6ew1zid9yg69mxjrqfkmyaup2hhb5d5djk9l5v8v49yydp12vyhoi7wq718b3c552jlb5f87xttxh43yno3td70d\"\n\t}, \n\t{\n\t\t\"id\": \"b13884df-3f9b-42c8-a4fc-f45e6befccba\", \n\t\t\"name\": \"Small Concrete Chicken\", \n\t\t\"surname\": \"huofz6cedq2scdd0o9zy5nxg7egry6cr7z0ymoualzuzpjsw7f55j87cgj05eignwv8tmilg17gjxs0apdvnriw9p38v9x1mv9bjhem2hnnjpqiuhvdnhtoueireu5ogywmlardcn9ow5mlbtzjqmngwbzrfjs4c7jzn5yxla0971208d31xkc3tgyxaqmyvlhxetpjrbkk4vl2qvj1bcip35c60nmd1m38t3cdu2cvr4lylasfbyby98mnkdi\", \n\t\t\"country\": \"5byx7lb2x3wll3n4gmesg6qk1t3wl3m1pxrv75bfz5glxfphl9xs7qkr2oclbzsm5uycdwh8o36kwltmjo96t9v73148kqc9l85ehiz1h29ody884lyzwll8ef1dpgni64puw1jw7gmals17lyz13r1ublezk7ry2jvlg3mk7pqeti24yzpl4vl8ks3a8q0e8fdjewgm7mz6vw9bh42q56o6kv3yhu0zg6ufz84o1z0o152wem697st0r580q2\"\n\t}, \n\t{\n\t\t\"id\": \"7c2ddca9-aafd-42d5-9f51-59566c4936f9\", \n\t\t\"name\": \"Tasty Plastic Hat\", \n\t\t\"surname\": \"cwys7eq8wi57fnzvopikx6ewjegs8u58zmgwlyviw6ecy08t6r3dua9814emz4v1gzsaw7yb33oin8vo9nerp9op0idh7sfmijv5f6ue4pz4qm1ihzimocuc3lwhp3hxn4q4pgxxmp5k1owqy0c34mj0ihiysjlji62ll8fy0zkcbecrk3ivmqvtsmmig9jnufz8tzvpk7f0iyq0gz5wolihs1dtskhca8wqzgtlwqr23ijjk4myq6xeppoato\", \n\t\t\"country\": \"jhwwdswlb8wjlczwaawdxlzxc5a8653oferct5ka44z7ck4uv2bexgz78qf6keglm6pfyx3f3ps2a5iuicsvjwcou4awea47ka67rfo6qchs9i8us8kb1q10s55ne3960wdclno6a7l0ullwlkxt8jd6bhasq8ub9qvb2an03be6m5t7vnljf8s2d8fie2ks6a4jlw3hkhxrfsn73kp82ir251lx6mialup97u5cs4j8d0jevovqb7ydnnli2p\"\n\t}, \n\t{\n\t\t\"id\": \"113d2087-76b3-4d46-8d6d-55301a90601c\", \n\t\t\"name\": \"Refined Concrete Gloves\", \n\t\t\"surname\": \"xwywu513t0g3vy5b2xn0nz6p2277qrfqb7x1ri06uzjd3aao1i9k7rbhvemu2gaso07votuj10tke5ea46esglz6nqhgbrfu5751q1ha0f7yeqpaicmdigdnobjckaxbq8z7j76sr70kxsue5wyevumf4mgaxve6rtuv7o0ewgjjrbbz19oybunc4rdmqyczkoena4f87eb9y1l22f8ql7pzlgddr5lpk805mlji7aw13sgt4oap5fif2gpgl3\", \n\t\t\"country\": \"6x6ev1k0vkt184vhno7i0vz15iztvs47ll4i5n3y618lgr5xtzvydmxvmtoch42x6sefjm0j17qvd294e5m86vvd2vkjlxyh2gw0bud76zqdbfxkz6bz2usrok3fxoouoeyouoewaud29x39va2k0k13esl7wtn6vju5j2tc1lxsvk09spyrwh4mad1u7r20xpzbo8m483c99sm2v8rjgx9t6yw9y17ywj6nazrgrh2vdz1psngvr5ek8gxoam\"\n\t}, \n\t{\n\t\t\"id\": \"92023e0c-9bfa-4033-a65c-2a5a9f270d62\", \n\t\t\"name\": \"Incredible Plastic Keyboard\", \n\t\t\"surname\": \"afec11bkjby0nx1w9e26ti8ueekux8p8dtlvl8y0qotcs0khhqhfqjvo8ge0ogyw4ewlskza0ymur4j4goo49sg39onz03eqwq6r1pj87lmj081kbjfdhebi98in9dce6m1ll95i4g1huiigqj1doa0twsat0f590jxu1lxuqboxno4h2anod1qz9braoui7stvk2a6urvo845owowpjo1yly5j002jsy6z7k3jejv9471nqk0e13k7uwusaix\", \n\t\t\"country\": \"hhcuhd65tjm7y32cxc4qyhlwx7680bhvnh169i0myn6wcs81hc6md9osm9y23u4edac9lh9ufwdxlzyor4nwuwrzwnl5u84es2u7t6taahz9ejpy1pjq4x25bxiqn6zi0qn22f8x2wmwcw7j5nx6njgjy2xvnutfw3vgbwfqo2btzz9ql804nf84avpnf7lv2206jx7kbuxzkxw6mp8p39tv0wyvmo5zir1iy0q5hdjuco1ryft4jrt9t0v2h9\"\n\t}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/library/authors/create",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"library",
+						"authors",
+                        "create"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - library/authors/paginate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/library/authors/paginate",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"library",
+                        "authors",
+                        "paginate"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - library/authors/get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{ \n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/library/authors/get",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"library",
+						"authors",
+                        "get"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - library/author/find",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/library/author/find",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"library",
+						"author",
+                        "find"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - library/author/find/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/library/author/find/5b19d6ac-4081-573b-96b3-56964d5326a8",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"library",
+						"author",
+                        "find",
+						"5b19d6ac-4081-573b-96b3-56964d5326a8"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - library/author/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"name\": \"Unbranded Concrete Soap\", \n\t\"surname\": \"1ekoqtc02norzrvp4460v4hi9aw3cz55o1n2ndnvhtbvr3dwjbngv4wbc17hbszbvh9tgoclvz4x44mdi3pzxrojly7fd653mn8s8zpn6ynl8s8dramn0546c806cb0ndm9rb9oupewhp34xstttf5c239cdrff43if4byxjyle78dnto2it64nz72t2lic9c7s960g2y9wzqph5hqokemiix3lfdrw9vvnfyl81xdl1zjmkx38ppm3g2ssnbp\", \n\t\"country\": \"414s5bo3d0nandqed077v9dngwsasjnlmr32y303fkwmm92c1wtqi64ui6ksf9t75l0ykmnb5qb9n2a3p141a9tf6qclxitgtovg5jjokgakgfeh2ktzojfrw6o4p2mtvjh1ees0jng01i3c9hcw4p2lho9n7txwevpw5ui9032s8mudmsc7ykl3c213smjsdb2jhqge4a6gpk4izoq5q0ubgp58hpmihk6ld4clyo484b2105l0l1a9rreypj\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/library/author/update",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"library",
+						"author",
+                        "update"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - library/author/delete/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/library/author/delete/5b19d6ac-4081-573b-96b3-56964d5326a8",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"library",
+						"author",
+                        "delete",
+						"5b19d6ac-4081-573b-96b3-56964d5326a8"
+					]
+				}
+			},
+			"response": []
+		},
+        {
+			"name": "REST - library/authors/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\":\n\t\t\t{\n\t\t\t\t\"[substring]\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/library/authors/delete",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"library",
+						"authors",
+                        "delete"
+					]
+				}
+			},
+			"response": []
+		}
+    ],
+    "variable": [
+		{
+			"id": "d9bc3afc-fd40-5505-b57f-8f5d5118e01b",
+			"key": "URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
